@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .container {
+    text-align: center;
+    max-width: 600px; /* Cambia el tamaño según tus preferencias */
+    margin: 0 auto; /* Centrar el contenedor horizontalmente */
+  }
+
+  .circular-image {
+    width: 150px; /* Cambia el tamaño según tus preferencias */
+    height: 150px; /* Cambia el tamaño según tus preferencias */
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    object-fit: cover; /* Escala la imagen para que encaje en el círculo */
+    border: 3px solid #007bff; /* Estilo de borde */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra */
+  }
+
+  h1 {
+    font-size: 32px; /* Cambia el tamaño de fuente según tus preferencias */
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #007bff;
+    animation: typing 2s steps(20, end), blink-caret 0.5s step-end infinite;
+  }
+
+  p {
+    font-size: 18px; /* Cambia el tamaño de fuente según tus preferencias */
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes blink-caret {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #007bff;
+    }
+  }
+
+  .social-icons {
+    margin-top: 20px; /* Espacio superior para los iconos */
+  }
+  
+  .social-icon {
+    font-size: 24px; /* Tamaño de los iconos */
+    margin: 0 10px; /* Espacio entre los iconos */
+    text-decoration: none;
+    color: black; /* Color de los iconos */
+  }
+  
+  .social-icon:hover {
+    color: #ff6600; /* Cambiar el color al pasar el mouse */
+  }

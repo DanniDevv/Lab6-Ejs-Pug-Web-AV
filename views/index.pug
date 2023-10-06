@@ -1,0 +1,16 @@
+html
+  head
+    title Space
+    link(type='text/css', rel='stylesheet', href='css/index.css')
+    link(rel='icon', type='image/x-icon', href='../images/tsParticles-64.png')
+  body.permission_denied
+    #tsparticles
+    .denied__wrapper
+      h1 SPACE
+      h3 Bienvenido #{nombre}
+      img#astronaut(src='images/astronaut.svg')
+      img#planet(src='images/planet.svg')
+      a(href='#')
+        button.denied__link Go Home
+    script(type='text/javascript', src='https://cdn.jsdelivr.net/npm/tsparticles@2.3.4/tsparticles.bundle.min.js')
+    script(type='text/javascript', src='js/index.js')
